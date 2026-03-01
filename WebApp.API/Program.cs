@@ -1,5 +1,5 @@
 
-namespace WebAPI2
+namespace WebApp.API
 {
     public class Program
     {
