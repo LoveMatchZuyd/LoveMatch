@@ -3,47 +3,22 @@
 # LoveMatch
 
 ## Project Structure
+```
 .
 ├── README.md
-├── WebApp.API
+├── WebApp
+│   ├── Application
+│   │   └── Services
 │   ├── Controllers
-│   │   └── WeatherForecastController.cs
-│   ├── Program.cs
-│   ├── Properties
-│   │   └── launchSettings.json
-│   ├── WeatherForecast.cs
-│   ├── WebAPI2.http
-│   ├── WebApp.API.csproj
-│   ├── WebApp.API.csproj.user
-│   ├── appsettings.Development.json
-│   ├── appsettings.json
-│   ├── bin
-│   │   └── Debug
-│   └── obj
-│       ├── Debug
-│       ├── WebApp.API.csproj.nuget.dgspec.json
-│       ├── WebApp.API.csproj.nuget.g.props
-│       ├── WebApp.API.csproj.nuget.g.targets
-│       ├── project.assets.json
-│       └── project.nuget.cache
-├── WebApp.Core
-│   ├── Data
-│   │   └── AppDbConnection.cs
-│   ├── Models
-│   ├── WebApp.Core.csproj
-│   ├── WebApp.Core.csproj.user
-│   ├── bin
-│   │   └── Debug
-│   └── obj
-│       ├── Debug
-│       ├── WebApp.Core.csproj.nuget.dgspec.json
-│       ├── WebApp.Core.csproj.nuget.g.props
-│       ├── WebApp.Core.csproj.nuget.g.targets
-│       ├── project.assets.json
-│       └── project.nuget.cache
-├── WebApp.Infrastructure
-│   ├── Controllers
-│   │   └── HomeController.cs
+│   │   ├── API
+│   │   ├── HomeController.cs
+│   │   └── Web
+│   ├── Domain
+│   │   ├── Entities
+│   │   └── Interfaces
+│   ├── Infrastructure
+│   │   ├── Data
+│   │   └── Repositories
 │   ├── Models
 │   │   └── ErrorViewModel.cs
 │   ├── Program.cs
@@ -54,17 +29,17 @@
 │   │   ├── Shared
 │   │   ├── _ViewImports.cshtml
 │   │   └── _ViewStart.cshtml
-│   ├── WebApp.Infrastructure.csproj
-│   ├── WebApp.Infrastructure.csproj.user
+│   ├── WebApp.csproj
+│   ├── WebApp.csproj.user
 │   ├── appsettings.Development.json
 │   ├── appsettings.json
 │   ├── bin
 │   │   └── Debug
 │   ├── obj
 │   │   ├── Debug
-│   │   ├── WebApp.Infrastructure.csproj.nuget.dgspec.json
-│   │   ├── WebApp.Infrastructure.csproj.nuget.g.props
-│   │   ├── WebApp.Infrastructure.csproj.nuget.g.targets
+│   │   ├── WebApp.csproj.nuget.dgspec.json
+│   │   ├── WebApp.csproj.nuget.g.props
+│   │   ├── WebApp.csproj.nuget.g.targets
 │   │   ├── project.assets.json
 │   │   └── project.nuget.cache
 │   └── wwwroot
@@ -74,3 +49,4 @@
 │       └── lib
 ├── WebApplication1.sln
 └── WebApplication1.slnLaunch.user
+```
