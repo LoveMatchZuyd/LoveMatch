@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36930.0
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{1D87B33F-4F2E-48A2-8F4E-75BAEDBFA8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchGame", "..\..\..\..\..\..\source\repos\FetchGame\FetchGame.csproj", "{2B740B20-2968-2034-2021-16C368598EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoveMatchLibrary", "LoveMatchLibrary\LoveMatchLibrary.csproj", "{C9FEC4B1-1265-4892-B676-290E77969865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{1D87B33F-4F2E-48A2-8F4E-75BAEDBFA8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D87B33F-4F2E-48A2-8F4E-75BAEDBFA8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D87B33F-4F2E-48A2-8F4E-75BAEDBFA8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B740B20-2968-2034-2021-16C368598EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B740B20-2968-2034-2021-16C368598EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B740B20-2968-2034-2021-16C368598EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B740B20-2968-2034-2021-16C368598EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9FEC4B1-1265-4892-B676-290E77969865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FEC4B1-1265-4892-B676-290E77969865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FEC4B1-1265-4892-B676-290E77969865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FEC4B1-1265-4892-B676-290E77969865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
