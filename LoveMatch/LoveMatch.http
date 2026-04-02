@@ -1,0 +1,6 @@
+@LoveMatch_HostAddress = http://localhost:5027
+
+GET {{LoveMatch_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
