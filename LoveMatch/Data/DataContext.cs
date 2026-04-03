@@ -1,6 +1,17 @@
-﻿namespace LoveMatch.Data
+﻿using LoveMatch.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace LoveMatch.Data
 {
-    public class DataContext
+    public class DataContext : DbContext
     {
+        public DbSet<Member> Members { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+
+        public DataContext(DbContextOptions<DataContext> options)
+            : base(options)
+        {
+            
+        }
     }
 }
