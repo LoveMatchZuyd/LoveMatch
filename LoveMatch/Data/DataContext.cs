@@ -7,7 +7,8 @@ namespace LoveMatch.Data
     {
         public DbSet<Member> Members { get; set; }
         public DbSet<Admin> Admins { get; set; }
-
+        public DbSet<Game> Games { get; set; }
+        
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)
         {
