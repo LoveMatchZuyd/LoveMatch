@@ -12,9 +12,21 @@ namespace LoveMatch.Models
 
         public bool IsAdult()
         {
-            int currentYear = DateTime.Now.Year;
+            DateTime currentYear = DateTime.Now;
 
-            return (currentYear - DateOfBirth.Year) >= 18;
+            if ((currentYear.Year - DateOfBirth.Year) <= 17)
+            {
+                return false;
+            }
+            else if (((currentYear.Year - DateOfBirth.Year) == 18) && (currentYear.DayOfYear < DateOfBirth.DayOfYear))
+            {
+                return false;
+            }
+
+            else
+            {
+                return true;
+            }
         }
     }
 }
