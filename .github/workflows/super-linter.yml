@@ -30,7 +30,9 @@ jobs:
           VALIDATE_DOTNET_SLN_FORMAT_ANALYZERS: true
           VALIDATE_DOTNET_SLN_FORMAT_STYLE: true
           VALIDATE_DOTNET_SLN_FORMAT_WHITESPACE: true
-          #Validate dockerfilee
+          #Validate dockerfile
           VALIDATE_DOCKERFILE_HADOLINT: true
+          #Validate JSON
+          VALIDATE_JSON: true
           DEFAULT_BRANCH: "develop"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
