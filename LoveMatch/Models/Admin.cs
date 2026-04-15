@@ -6,6 +6,7 @@ namespace LoveMatch.Models
     {
         public string? Username { get; set; }
         public string? Password { get; set; }
+        public List<Member>? Members { get; set; }
         public bool IsSuperAdmin { get; set; }
     }
 }

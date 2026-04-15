@@ -12,7 +12,7 @@ namespace LoveMatch.Tests
             {
                 Id = 1,
                 Name = "Brad",
-                Age = 26,
+                DateOfBirth = new DateTime(1990, 12, 25),
                 Bio = "Houdt van voetballen en pizza eten."
             };
             //Act
@@ -28,7 +28,7 @@ namespace LoveMatch.Tests
             {
                 Id = 2,
                 Name = "Lisa",
-                Age = 17,
+                DateOfBirth = new DateTime(2008, 04, 16),
                 Bio = "Houdt van koken."
             };
 
