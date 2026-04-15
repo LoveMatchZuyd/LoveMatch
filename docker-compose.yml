@@ -1,0 +1,20 @@
+services:
+  lovematch:
+    image: ${DOCKER_REGISTRY-}lovematch
+    build:
+      context: .
+      dockerfile: LoveMatch/Dockerfile
+
+  lovematch.trivia:
+    image: ${DOCKER_REGISTRY-}lovematchtrivia
+    build:
+      context: .
+      dockerfile: LoveMatch.Trivia/Dockerfile
+
+
+  lovematch.tests:
+    image: ${DOCKER_REGISTRY-}lovematchtests
+    build:
+      context: .
+      dockerfile: LoveMatch.Tests/Dockerfile
+
