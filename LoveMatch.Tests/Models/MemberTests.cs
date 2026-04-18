@@ -28,7 +28,7 @@ namespace LoveMatch.Tests
             {
                 Id = 2,
                 Name = "Lisa",
-                DateOfBirth = new DateTime(2008, 04, 16),
+                DateOfBirth = new DateTime(2018, 12, 25),
                 Bio = "Houdt van koken."
             };
 
