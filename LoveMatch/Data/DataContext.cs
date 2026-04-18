@@ -31,5 +31,6 @@ namespace LoveMatch.Data
                 .HasMany(m => m.Members)
                 .WithMany(m => m.Matches);
         }
+        public DbSet<LoveMatch.Models.Match> Match { get; set; } = default!;
     }
 }
