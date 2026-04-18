@@ -4,6 +4,8 @@
     {
         public int PlayTimeInMinutes { get; set; }
         public string? Difficulty { get; set; }
+        public required Member Member { get; set; }
+        public required int MemberId { get; set; }
 
         public void ChangeDifficulty(string difficulty)
         {

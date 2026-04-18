@@ -6,8 +6,10 @@ namespace LoveMatch.Models
     {
         public DateTime DateOfBirth { get; set; }
         public string? Bio { get; set; }
+        public List<Game>? Games { get; set; }
 
-        public Admin Admin { get; set; }
+        public List<Match>? Matches { get; set; }
+        public required Admin Admin { get; set; }
         public int AdminId { get; set; }
 
         public bool IsAdult()

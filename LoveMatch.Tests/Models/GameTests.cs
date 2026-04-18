@@ -9,12 +9,25 @@ namespace LoveMatch.Tests.Models
 {
     public class GameTests
     {
-        [Fact]
+        Member testMember = new Member
+                    {
+                Id = 1,
+                Name = "Brad",
+                DateOfBirth = new DateTime(1990, 12, 25),
+                Bio = "Houdt van voetballen en pizza eten.",
+                Admin = new Admin(),
+                };
+
+    [Fact]
         public void ChangeDifficulty_To_Easy_Returns_Easy()
         {
             //Arrange
 
-            Game testGameDifficulty = new Game();
+            Game testGameDifficulty = new Game
+            {
+                Member = testMember,
+                MemberId = testMember.Id
+            };
 
             //Act
             testGameDifficulty.ChangeDifficulty("Easy");
@@ -29,7 +42,11 @@ namespace LoveMatch.Tests.Models
         {
             //Arrange
 
-            Game testGamePlayTime = new Game();
+            Game testGamePlayTime = new Game
+            {
+                Member = testMember,
+                MemberId = testMember.Id
+            };
 
             //Act
             testGamePlayTime.ChangePlayTime(90);
