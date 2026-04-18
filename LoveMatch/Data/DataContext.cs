@@ -14,5 +14,22 @@ namespace LoveMatch.Data
         {
             
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder) //Created by W. Smeets
+        {
+            modelBuilder.Entity<Member>()
+                .HasOne(a => a.Admin)
+                .WithMany(m => m.Members)
+                .HasForeignKey(a => a.AdminId);
+
+            modelBuilder.Entity<Game>()
+                .HasOne(m => m.Member)
+                .WithMany(g => g.Games)
+                .HasForeignKey(m => m.MemberId);
+
+            modelBuilder.Entity<Match>()
+                .HasMany(m => m.Members)
+                .WithMany(m => m.Matches);
+        }
     }
 }
