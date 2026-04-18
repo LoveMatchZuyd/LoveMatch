@@ -11,10 +11,3 @@ services:
       context: .
       dockerfile: LoveMatch.Trivia/Dockerfile
 
-
-  lovematch.tests:
-    image: ${DOCKER_REGISTRY-}lovematchtests
-    build:
-      context: .
-      dockerfile: LoveMatch.Tests/Dockerfile
-

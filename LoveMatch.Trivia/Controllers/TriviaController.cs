@@ -28,9 +28,9 @@ namespace LoveMatch.Trivia.Controllers
 
                 return responseJson;
             }
-            catch (HttpRequestException e)
+            catch (Exception)
             {
-                string error = "Er ging iets mis";
+                string error = new string("Onze excuses. Er ging iets mis");
                 JsonDocument errorJson = JsonDocument.Parse(error);
                 return errorJson;
             }

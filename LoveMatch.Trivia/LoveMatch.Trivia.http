@@ -1,6 +1,6 @@
-@LoveMatch.Trivia_HostAddress = http://localhost:5133
+@LoveMatch.Trivia_HostAddress = http://localhost:8082
 
-GET {{LoveMatch.Trivia_HostAddress}}/weatherforecast/
+GET {{LoveMatch.Trivia_HostAddress}}/
 Accept: application/json
 
 ###
