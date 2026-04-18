@@ -1,6 +1,6 @@
-@LoveMatch_HostAddress = http://localhost:5027
+@LoveMatch_HostAddress = http://localhost:8080
 
-GET {{LoveMatch_HostAddress}}/weatherforecast/
+GET {{LoveMatch_HostAddress}}/
 Accept: application/json
 
 ###
