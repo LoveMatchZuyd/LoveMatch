@@ -42,18 +42,5 @@ namespace LoveMatch.GameFetcher.API.Controllers
             return fetchedGame;
         }
 
-        [HttpGet("{name}")]
-        public async Task<ActionResult<FetchedGame>> GetFetchedGameByName(string name)
-        {
-            var fetchedGame = await _context.FetchedGames.FindAsync(name);
-
-            if (fetchedGame == null)
-            {
-                return NotFound();
-            }
-
-            return fetchedGame;
-        }
-
     }
 }

@@ -14,3 +14,11 @@ services:
       dockerfile: LoveMatch.Trivia/Dockerfile
     ports:
        - "8082:8082"
+  lovematch.gamefetcher.api:
+    image: ${DOCKER_REGISTRY-}lovematchgamefetcherapi
+    build:
+      context: .
+      dockerfile: LoveMatch.GameFetcher.API/Dockerfile
+    ports:
+       - "8084:8084"
+
