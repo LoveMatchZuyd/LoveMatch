@@ -73,6 +73,11 @@ namespace LoveMatch.Controllers
             return NoContent();
         }
 
+        private bool MemberExists(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         // POST: api/Members
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
@@ -82,27 +87,6 @@ namespace LoveMatch.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetMember", new { id = member.Id }, member);
-        }
-
-        // DELETE: api/Members/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteMember(int id)
-        {
-            var member = await _context.Members.FindAsync(id);
-            if (member == null)
-            {
-                return NotFound();
-            }
-
-            _context.Members.Remove(member);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        private bool MemberExists(int id)
-        {
-            return _context.Members.Any(e => e.Id == id);
         }
     }
 }
