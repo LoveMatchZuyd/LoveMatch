@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using LoveMatch.Models;
 
 namespace LoveMatch.Tests.Models
-{
+{ //These tests were created and configured by Willem Smeets
     public class GameTests
     {
         Member testMember = new Member

@@ -21,4 +21,5 @@ services:
       dockerfile: LoveMatch.GameFetcher.API/Dockerfile
     ports:
        - "8084:8084"
+# Ports were allocated by Willem Smeets
 

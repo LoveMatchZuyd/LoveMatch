@@ -1,9 +1,9 @@
-//Created by W. Smeets
 using Microsoft.EntityFrameworkCore;
 using LoveMatch.GameFetcher.API.Data;
 
 namespace LoveMatch.GameFetcher.API
 {
+    //This API was created and configured by Willem Smeets
     public class Program
     {
         public static void Main(string[] args)

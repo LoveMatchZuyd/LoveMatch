@@ -25,6 +25,6 @@ RUN dotnet publish "./LoveMatch.csproj" -c $BUILD_CONFIGURATION -o /app/publish 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
-ENV ASPNETCORE_URLS=http://+:8080
+ENV ASPNETCORE_URLS=http://+:8080			#Configured by W. Smeets. Forces the container to only use http, not https
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "LoveMatch.dll"]
