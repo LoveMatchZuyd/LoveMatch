@@ -11,7 +11,7 @@ namespace LoveMatch.Models
         public List<Match>? Matches { get; set; }
         public required Admin Admin { get; set; }
         public int AdminId { get; set; }
-
+       
         public bool IsAdult()
         {
             DateTime currentYear = DateTime.Now;
