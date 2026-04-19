@@ -9,7 +9,8 @@ namespace LoveMatch.Data
         public DbSet<Member> Members { get; set; }
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Game> Games { get; set; }
-        
+        public DbSet<LoveMatch.Models.Match> Match { get; set; } = default!;
+
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)
         {
@@ -32,6 +33,5 @@ namespace LoveMatch.Data
                 .HasMany(m => m.Members)
                 .WithMany(m => m.Matches);
         }
-        public DbSet<LoveMatch.Models.Match> Match { get; set; } = default!;
     }
 }
