@@ -42,16 +42,37 @@ namespace LoveMatch.Controllers
             return match;
         }
 
-        // POST: api/Matches
+        // PUT: api/Matches/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Match>> PostMatch(Match match)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutMatch(int id, Match match)
         {
-            _context.Match.Add(match);
-            await _context.SaveChangesAsync();
+            if (id != match.Id)
+            {
+                return BadRequest();
+            }
 
-            return CreatedAtAction("GetMatch", new { id = match.Id }, match);
+            _context.Entry(match).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!MatchExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
+
 
         // DELETE: api/Matches/5
         [HttpDelete("{id}")]
