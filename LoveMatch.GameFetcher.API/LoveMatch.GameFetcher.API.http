@@ -1,6 +1,6 @@
-@LoveMatch.GameFetcher.API_HostAddress = http://localhost:5246
+@LoveMatch.GameFetcher.API_HostAddress = http://localhost:8084
 
-GET {{LoveMatch.GameFetcher.API_HostAddress}}/weatherforecast/
+GET {{LoveMatch.GameFetcher.API_HostAddress}}/
 Accept: application/json
 
 ###
