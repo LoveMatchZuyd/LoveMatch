@@ -4,10 +4,13 @@ services:
     build:
       context: .
       dockerfile: LoveMatch/Dockerfile
+    ports:
+       - "8080:8080"
 
   lovematch.trivia:
     image: ${DOCKER_REGISTRY-}lovematchtrivia
     build:
       context: .
       dockerfile: LoveMatch.Trivia/Dockerfile
-
+    ports:
+       - "8082:8082"
