@@ -10,6 +10,7 @@ using LoveMatch.GameFetcher.API.Models;
 
 namespace LoveMatch.GameFetcher.API.Controllers
 {
+    // Created by W. Smeets
     [Route("api/[controller]")]
     [ApiController]
     public class FetchedGamesController : ControllerBase

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LoveMatch.Migrations
 {
+    //Created by W. Smeets
     /// <inheritdoc />
     public partial class ModelOverride : Migration
     {

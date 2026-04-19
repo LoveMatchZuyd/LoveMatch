@@ -10,6 +10,7 @@ using LoveMatch.Models;
 
 namespace LoveMatch.Controllers
 {
+    // Created by B. Malasch
     [Route("api/[controller]")]
     [ApiController]
     public class AdminsController : ControllerBase

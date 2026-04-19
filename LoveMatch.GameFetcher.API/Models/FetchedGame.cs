@@ -1,5 +1,5 @@
 ﻿namespace LoveMatch.GameFetcher.API.Models;
-
+// Created by W. Smeets
 public class FetchedGame
 {
     public int Id { get; set; } 

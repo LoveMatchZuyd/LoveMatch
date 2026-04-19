@@ -2,6 +2,7 @@
 
 namespace LoveMatch.Models
 {
+    // Created by B. Malasch. Edited by W. Smeets (Relations + Method IsAdult)
     public class Member : Entity
     {
         public DateTime DateOfBirth { get; set; }

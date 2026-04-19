@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LoveMatch.Data
 {
+    //Created by B. Malasch. Edited by W. Smeets (DbSet<Admin).
     public class DataContext : DbContext
     {
         public DbSet<Member> Members { get; set; }

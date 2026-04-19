@@ -7,6 +7,7 @@ using LoveMatch.Models;
 
 namespace LoveMatch.Tests.Models
 {
+    // Created by W. Smeets
     public class GameTests
     {
         Member testMember = new Member

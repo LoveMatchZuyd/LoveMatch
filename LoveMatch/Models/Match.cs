@@ -1,5 +1,6 @@
 ﻿namespace LoveMatch.Models
 {
+    // Created by W. Smeets
     public class Match
     {
         public int Id { get; set; }

@@ -1,5 +1,6 @@
 ﻿namespace LoveMatch.Models
 {
+    // Created by W. Smeets
     public class Game : Entity
     {
         public int PlayTimeInMinutes { get; set; }

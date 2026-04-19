@@ -4,6 +4,7 @@ namespace LoveMatch.Tests
 {
     public class MemberTests
     {
+        // Created by B. Malasch. Edited by W. Smeets (Admin object i.v.m. REQUIRED relatie).
         [Fact]
         public void IsAdult_Should_Return_True_When_Age_Is_18_Or_Older()
         {

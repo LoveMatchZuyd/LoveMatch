@@ -2,6 +2,7 @@
 
 namespace LoveMatch.Models
 {
+    // Created by B. Malasch
     public class Admin : Entity
     {
         public string? Username { get; set; }

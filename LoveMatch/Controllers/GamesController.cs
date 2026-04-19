@@ -10,6 +10,7 @@ using LoveMatch.Models;
 
 namespace LoveMatch.Controllers
 {
+    // Created by W. Smeets
     [Route("api/[controller]")]
     [ApiController]
     public class GamesController : ControllerBase

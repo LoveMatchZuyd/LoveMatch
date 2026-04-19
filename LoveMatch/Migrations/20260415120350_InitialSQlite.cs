@@ -4,6 +4,7 @@
 
 namespace LoveMatch.Migrations
 {
+    // Created by B. Malasch.
     /// <inheritdoc />
     public partial class InitialSQlite : Migration
     {
